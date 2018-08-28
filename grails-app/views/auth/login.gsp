@@ -12,7 +12,7 @@
             <div class="form-group">
                 <label for="username">Email address</label>
                 <input type="email" class="form-control" id="username" name="username"
-                       placeholder="Enter Email Address">
+                       placeholder="Enter Email Address" autofocus>
             </div>
 
             <div class="form-group">
@@ -20,7 +20,7 @@
                 <input type="password" class="form-control" name="password" id="password" placeholder="Password">
             </div>
 
-            <button type="submit" class="btn btn-primary">Submit</button>
+            <button type="submit" class="btn btn-outline-primary">Submit</button>
         </form>
     </div>
 </div>

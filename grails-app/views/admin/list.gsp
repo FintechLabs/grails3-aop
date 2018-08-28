@@ -26,7 +26,8 @@
                         <td>${person?.username}</td>
                         <td>${person?.personType?.name()}</td>
                         <td>
-                            <a href="${createLink(controller: 'admin', action: 'enablePersonAccount', id: person?.uniqueId)}">Activate</a>
+                            <a href="${createLink(controller: 'admin', action: 'enablePersonAccount', id: person?.uniqueId)}"
+                               class="badge badge-primary">Activate</a>
                         </td>
                     </tr>
                 </g:each>

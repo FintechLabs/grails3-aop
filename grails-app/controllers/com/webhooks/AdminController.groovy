@@ -16,6 +16,7 @@ class AdminController {
     def enablePersonAccount = {
         Person person = Person.findByUniqueId(params.id)
         if (person) {
+            println("***************    AOP   Before      ====>>>>    ${person?.enabled}")
             personService.enablePersonAccount(person)
             flash.message = "Person account has activated successfully."
         } else {

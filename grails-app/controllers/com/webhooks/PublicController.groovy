@@ -1,5 +1,6 @@
 package com.webhooks
 
+import grails.converters.JSON
 import grails.plugin.springsecurity.SpringSecurityService
 import grails.plugin.springsecurity.annotation.Secured
 
@@ -18,6 +19,12 @@ class PublicController {
         } else {
             redirect(controller: "person", action: "index")
         }
+    }
+
+    def testWebHook = {
+        def result = [:]
+        result.putAll(params)
+        render result as JSON
     }
 
 }

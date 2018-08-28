@@ -24,7 +24,7 @@ class BootStrap {
         }
 
         if (Person.countByUsername("person1@email.com") < 1) {
-            Person person = new Person(firstName: "Person", lastName: "Name #1", username: "person1@email.com", password: "person1234", enabled: true)
+            Person person = new Person(firstName: "Person", lastName: "Name #1", username: "person1@email.com", password: "person1234")
             person.save(flush: true)
             UserRole.create(person, Role.findByAuthority("ROLE_PERSON"), true)
         }
